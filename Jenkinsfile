@@ -1,3 +1,4 @@
+@Library('javahome-libs') _
 node {
       stage('SCM Checkout'){
 	   git 'https://github.com/GunnuD/my-app'
