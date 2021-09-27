@@ -1,9 +1,9 @@
 node {
-      stage(SCM Checkout){
+      stage('SCM Checkout'){
 	  tool name: 'Maven', type: 'maven'
-	  https://github.com/GunnuD/my-app/
+	  git 'https://github.com/GunnuD/my-app/'
 	  }
-	  stage (''Compile-Package){
+	  stage ('Compile-Package){
 	  sh 'mvn package'
 	  }
 	  }
