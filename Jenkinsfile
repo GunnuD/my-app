@@ -1,4 +1,7 @@
 node {
+	environment{
+	   PATH = "/opt/apache-maven-3.8.2/bin/mvn"
+	   }
       stage('SCM Checkout'){
 	   git 'https://github.com/GunnuD/my-app'
 	  }
